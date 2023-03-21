@@ -2,10 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const { basePath } = useRouter();
   return (
     <>
       <Head>
@@ -28,7 +30,7 @@ export default function Home() {
             >
               By{' '}
               <Image
-                src="basePath/vercel.svg"
+                src={`${basePath}/vercel.svg`}
                 alt="Vercel Logo"
                 className={styles.vercelLogo}
                 width={100}
@@ -42,7 +44,7 @@ export default function Home() {
         <div className={styles.center}>
           <Image
             className={styles.logo}
-            src="basePath/next.svg"
+            src={`${basePath}/next.svg`}
             alt="Next.js Logo"
             width={180}
             height={37}
@@ -50,7 +52,7 @@ export default function Home() {
           />
           <div className={styles.thirteen}>
             <Image
-              src="basePath/thirteen.svg"
+              src={`${basePath}/thirteen.svg`}
               alt="13"
               width={40}
               height={31}

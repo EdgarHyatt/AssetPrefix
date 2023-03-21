@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: 'https://cdn.jsdelivr.net/gh/EdgarRepos/cdn/',
+  assetPrefix: 'https://cdn.jsdelivr.net/gh/EdgarHyatt/CDN/',
   basePath: '/basePath',
 }
 
