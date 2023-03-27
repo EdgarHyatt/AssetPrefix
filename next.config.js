@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: 'https://cdn.jsdelivr.net/gh/EdgarHyatt/CDN/',
-  basePath: '/basePath',
+  assetPrefix: process.env.ASSET_PREFIX,
 }
 
 module.exports = nextConfig
